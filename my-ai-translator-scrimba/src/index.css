@@ -1,0 +1,115 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	min-height: 100%;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+textarea {
+  resize: none;
+  padding: 10px;
+  background-color: var(--p-light-lime);
+  border-radius: 10px;
+  border: none;
+  color: var(--p-black);
+  font-weight: 700;
+  min-width: 20rem;
+  max-width: 30rem;
+  min-height: 5rem;
+  field-sizing: content;
+}
+
+textarea:focus {
+  outline: var(--p-light-blue) solid 1px;
+}
+
+button {
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+/**/
+
+:root {
+  --p-black: #202734;
+  --p-blue: #36415A;
+  --p-light-blue: #5C6B8A;
+  --p-lime: #B7D894;
+  --p-dark-green: #15370D;
+  --p-light-lime: #E0F8C7;
+  --p-cream: #FFF2B4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--p-light-lime);
+  color: var(--p-black);
+  padding: 20px;
+  
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 20px;
+  background-color: var(--p-lime);
+  min-width: 500px;
+  min-height: 200px;
+  border: 2px solid var(--p-dark-green);
+  border-radius: 10px;
+}
+
+.output-container {
+  padding: 10px;
+  background-color: var(--p-light-lime);
+  border-radius: 10px;
+  border: none;
+  color: var(--p-black);
+  font-weight: 500;
+  min-width: 25rem;
+  max-width: 30rem;
+  min-height: 5rem;
+}
