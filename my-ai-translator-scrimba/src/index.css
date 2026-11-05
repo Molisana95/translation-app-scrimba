@@ -40,8 +40,7 @@ textarea {
   border: none;
   color: var(--p-black);
   font-weight: 700;
-  min-width: 20rem;
-  max-width: 30rem;
+  width: clamp(200px, 70%, 500px);
   min-height: 5rem;
   field-sizing: content;
 }
@@ -94,12 +93,25 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding: 20px;
+  padding: 1rem;
   background-color: var(--p-lime);
-  min-width: 500px;
+  width: clamp(300px, 70%, 600px);
   min-height: 200px;
   border: 2px solid var(--p-dark-green);
   border-radius: 10px;
+}
+
+.lang-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .output-container {
@@ -109,7 +121,6 @@ p {
   border: none;
   color: var(--p-black);
   font-weight: 500;
-  min-width: 25rem;
-  max-width: 30rem;
+  width: clamp(200px, 70%, 500px);
   min-height: 5rem;
 }
