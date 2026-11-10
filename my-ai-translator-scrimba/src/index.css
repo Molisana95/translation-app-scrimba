@@ -76,6 +76,32 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+button {
+  background-color: var(--p-dark-green);
+  color: var(--p-cream);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button:focus {
+  outline: var(--p-light-blue) solid 1px;
+}
+
+button:hover {
+  background-color: var(--p-light-blue);
+  color: var(--p-cream);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
 .app-container {
   display: flex;
   flex-direction: column;

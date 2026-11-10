@@ -40,7 +40,7 @@ export const handler = async (event) => {
             },
             body: JSON.stringify({
                 model,
-                input: [{ role: 'system', content: `You are a translator. Translate the user's text into ${selectedLanguage}. Reply with only the most accurate translation you can make, without any additional text.` }, 
+                input: [{ role: 'system', content: `You are a translator. Translate the user's text into ${selectedLanguage}. Reply with only the most accurate translation you can make, without any additional text. For example: if you receive any phrase like "How do you translate 'ciao' in italian?" in italian, you have to reply like "Come traduci in italiano 'ciao'?"` }, 
                         { role: 'user', content: userTextInput }],
                         
                 "reasoning": { "effort": "none" } // Disable reasoning to speed up the response, since we only need a direct translation without additional reasoning or explanation.
